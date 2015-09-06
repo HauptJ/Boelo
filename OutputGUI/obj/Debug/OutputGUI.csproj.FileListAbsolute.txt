@@ -1,0 +1,1 @@
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\bin\Debug\OutputGUI.exe.config
