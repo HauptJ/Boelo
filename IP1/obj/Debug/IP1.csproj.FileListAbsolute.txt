@@ -7,3 +7,10 @@ D:\Git\Boelo\IP1\bin\Debug\IP1.exe
 D:\Git\Boelo\IP1\bin\Debug\IP1.pdb
 D:\Git\Boelo\IP1\obj\Debug\IP1.exe
 D:\Git\Boelo\IP1\obj\Debug\IP1.pdb
+C:\Users\Josh\documents\visual studio 2015\Projects\IP1\IP1\obj\Debug\IP1.exe
+C:\Users\Josh\documents\visual studio 2015\Projects\IP1\IP1\obj\Debug\IP1.pdb
+C:\Users\Josh\Documents\Visual Studio 2015\Projects\IP1\IP1\bin\Debug\IP1.exe
+C:\Users\Josh\Documents\Visual Studio 2015\Projects\IP1\IP1\bin\Debug\IP1.pdb
+C:\Users\Josh\Documents\Visual Studio 2015\Projects\IP1\IP1\obj\Debug\IP1.csprojResolveAssemblyReference.cache
+C:\Users\Josh\Documents\Visual Studio 2015\Projects\IP1\IP1\obj\Debug\IP1.Properties.Resources.resources
+C:\Users\Josh\Documents\Visual Studio 2015\Projects\IP1\IP1\obj\Debug\IP1.csproj.GenerateResource.Cache

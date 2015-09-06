@@ -10,7 +10,9 @@ namespace IP1
     {
         // values to be tracked by the tally component
         private int numChecks = 3002; //set check counter to initial value of 3002
-        private decimal checkSum = 0; 
+        private double checkSum = 0;
+       
+        public object InForm { get; internal set; }
 
         //increments total number of checks when called
         //input: none
@@ -23,7 +25,7 @@ namespace IP1
         //adds up sum of checks
         //input: user specified amount
         //output: none
-        public void newSum(decimal amount)
+        public void newSum(double amount)
         {
             checkSum = checkSum + amount;
         }
@@ -41,7 +43,7 @@ namespace IP1
         //input: none
         //output: checkSum (current sum of checks issued) as decimal
 
-        public decimal getCheckSum()
+        public double getCheckSum()
         {
             return checkSum;
         }
