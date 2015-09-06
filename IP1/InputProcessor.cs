@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace IP1
 {
-    class InputPorocessor
+    class InputProcessor
     {
         private long wholeNumber; 
         private string decNum;
