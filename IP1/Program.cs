@@ -17,29 +17,64 @@ namespace IP1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
 
-            CheckInputForm InForm = new CheckInputForm();
-
+            // Creating new tally.
             tally CheckTally = new tally();
 
-            Application.Run(InForm);
+            // Create a while flag for entering more than one check.
+            bool Rep;
+            do
+            {
+                // Creating and running input form.
+                CheckInputForm InForm = new CheckInputForm();
+                Application.Run(InForm);
+                // Code doesn't advance until the user successfully enters a check. 
+                // So beyond this point, assume a check has been entered successfully. 
 
-            // Here are your gets, copypasta and use where needed. 
+                // Debug for input form
+                MessageBox.Show("Name: " + InForm.getName() + "\nAmount: " + InForm.getAmount() + "\nMemo: " + InForm.getMemo() );
 
-            // InForm.getName();
-            // InForm.getAmount();
-            // InForm.getMemo();
+                // increments number of checks
+                CheckTally.incrementNumChecks();
 
-            //increments number of checks
-            //NEEDS TO BE CALLED WHEN ACCEPT IS PUSHED? HOW???
-            CheckTally.incrementNumChecks();
+                // sum up new check sum
+                CheckTally.newSum(InForm.getAmount());
+
+                // These get the vaules from the input form. 
+                // Name is trimmed of whitespace and amount is positive non-zero
+                // InForm.getName()
+                // InForm.getAmount()
+                // InForm.getMemo()
+
+                // Creates the input processor
+                InputProcessor proc = new InputProcessor();
+
+                // This method converts the getAmount into the string so the decimal and the whole number can be evaluated
+                proc.Parse(InForm.getAmount());
+
+                // This method prints the dollar amount in the word format
+                string dollarAmountAsTxt = proc.PrintString();
+
+                // debug for amount to string
+                // MessageBox.Show("Amount: "+InForm.getAmount()+"\nAmount Text: "+dollarAmountAsTxt);
+        
+
+
+                // Creates a message box asking if they want to enter another check.
+                DialogResult dialogResult = MessageBox.Show("Would you like to enter another check?", "Check - More", MessageBoxButtons.YesNo);
+                if(dialogResult == DialogResult.Yes)
+                {
+                    Rep = true;
+                }
+                else
+                {
+                    Rep = false;
+                }
+            }
+            while(Rep);
             
-            //sum up new check sum
-            //NEEDS TO BE CALLED WHEN ACCEPT IS PUSHED? HOW???
-            CheckTally.newSum(InForm.getAmount());
-
-
-    }
+            // debug for tally 
+            //MessageBox.Show("sum: " + CheckTally.getCheckSum() + "\nNum Checks: " + CheckTally.getNumChecks());
+        }
     }
 }

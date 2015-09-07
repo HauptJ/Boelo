@@ -174,14 +174,19 @@ namespace IP1
 
         private void bAccept_Click(object sender, EventArgs e)
         {
-            checkName = tName.Text;
-            checkMemo = tMemo.Text;
-            checkAmount = System.Convert.ToDouble(tAmount.Value);
-
-            // Debug just in case
-            // MessageBox.Show(checkName + ", " + checkMemo + ", " + checkAmount);
-
-            this.Close();
+            if(tName.Text.Trim() == "" | tAmount.Value == 0)
+            {
+                MessageBox.Show("Make sure your check has a Name and Amount.");
+                tName.Focus();
+            }
+            else
+            {
+                checkName = tName.Text.Trim();
+                checkMemo = tMemo.Text;
+                checkAmount = System.Convert.ToDouble(tAmount.Value);
+                
+                this.Close();
+            }
         }
 
         /// To use these I just did something like this 
