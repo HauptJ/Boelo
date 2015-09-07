@@ -30,7 +30,10 @@ namespace IP1
                 Application.Run(InForm);
                 // Code doesn't advance until the user successfully enters a check. 
                 // So beyond this point, assume a check has been entered successfully. 
-                
+
+                // Debug for input form
+                MessageBox.Show("Name: " + InForm.getName() + "\nAmount: " + InForm.getAmount() + "\nMemo: " + InForm.getMemo() );
+
                 // increments number of checks
                 CheckTally.incrementNumChecks();
 
@@ -43,6 +46,18 @@ namespace IP1
                 // InForm.getAmount()
                 // InForm.getMemo()
 
+                // Creates the input processor
+                InputProcessor proc = new InputProcessor();
+
+                // This method converts the getAmount into the string so the decimal and the whole number can be evaluated
+                proc.Parse(InForm.getAmount());
+
+                // This method prints the dollar amount in the word format
+                string dollarAmountAsTxt = proc.PrintString();
+
+                // debug for amount to string
+                // MessageBox.Show("Amount: "+InForm.getAmount()+"\nAmount Text: "+dollarAmountAsTxt);
+        
 
 
                 // Creates a message box asking if they want to enter another check.
@@ -58,7 +73,7 @@ namespace IP1
             }
             while(Rep);
             
-            // debug for tally. 
+            // debug for tally 
             //MessageBox.Show("sum: " + CheckTally.getCheckSum() + "\nNum Checks: " + CheckTally.getNumChecks());
         }
     }
