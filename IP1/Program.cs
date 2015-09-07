@@ -17,29 +17,39 @@ namespace IP1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
 
-            CheckInputForm InForm = new CheckInputForm();
-
+            //Creating new tally.
             tally CheckTally = new tally();
 
-            Application.Run(InForm);
+            //Create a while flag for entering more than one check.
+            bool Rep;
+            do
+            {
+                //Creating and running input form.
+                CheckInputForm InForm = new CheckInputForm();
+                Application.Run(InForm);
+                
+                //increments number of checks
+                CheckTally.incrementNumChecks();
 
-            // Here are your gets, copypasta and use where needed. 
+                //sum up new check sum
+                CheckTally.newSum(InForm.getAmount());
 
-            // InForm.getName();
-            // InForm.getAmount();
-            // InForm.getMemo();
-
-            //increments number of checks
-            //NEEDS TO BE CALLED WHEN ACCEPT IS PUSHED? HOW???
-            CheckTally.incrementNumChecks();
+                //Creates a message box asking if they want to enter another check.
+                DialogResult dialogResult = MessageBox.Show("Would you like to enter another check?", "Check - More", MessageBoxButtons.YesNo);
+                if(dialogResult == DialogResult.Yes)
+                {
+                    Rep = true;
+                }
+                else
+                {
+                    Rep = false;
+                }
+            }
+            while(Rep);
             
-            //sum up new check sum
-            //NEEDS TO BE CALLED WHEN ACCEPT IS PUSHED? HOW???
-            CheckTally.newSum(InForm.getAmount());
-
-
-    }
+            //debug for tally. 
+            //MessageBox.Show("sum: " + CheckTally.getCheckSum() + "\nNum Checks: " + CheckTally.getNumChecks());
+        }
     }
 }
