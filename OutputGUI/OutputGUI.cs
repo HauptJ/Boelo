@@ -9,9 +9,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OutputGUI {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class OutputGUI : Form {
+        public OutputGUI() {
             InitializeComponent();
+        }
+
+        private void OutputGUI_Load(object sender, EventArgs e) {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e) {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e) {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e) {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e) {
+
         }
     }
 }
