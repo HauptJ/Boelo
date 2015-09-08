@@ -14,17 +14,22 @@ namespace IP1 {
             InitializeComponent();
         }
 
+        /**
+        *   This displays the check in a window.
+        */
         public void displayCheck(int checkID, String date, String payee, double dollarAmount, String dollarText, String memo) {
             checkNumTopLabel.Text = checkID.ToString();
             checkNumBottomLabel.Text = checkID.ToString();
             dateLabel.Text = date;
 
+            // Display the dollar amount correctly
+            dollarsLabel.Text = String.Format("{0:n}", dollarAmount);
+
+            // These loops make sure the underlined string reaches the desired length.
             int payeeLength = payeeLabel.Text.Length;
             payeeLabel.Text = payee;
             while (payeeLabel.Text.Length < payeeLength)
                 payeeLabel.Text += " ";
-
-            dollarsLabel.Text = dollarAmount.ToString();
 
             int dollarTextLength = dollarsTextLabel.Text.Length;
             dollarsTextLabel.Text = dollarText;
@@ -35,9 +40,8 @@ namespace IP1 {
             memoLabel.Text = memo;
             while (memoLabel.Text.Length < memoLength)
                 memoLabel.Text += " ";
-
-
-            Application.EnableVisualStyles();
+            
+            // Show the window
             Application.Run(this);
         }
 

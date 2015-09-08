@@ -150,8 +150,8 @@
             // dollarsTextLabel
             // 
             this.dollarsTextLabel.AutoSize = true;
-            this.dollarsTextLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dollarsTextLabel.Location = new System.Drawing.Point(12, 129);
+            this.dollarsTextLabel.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dollarsTextLabel.Location = new System.Drawing.Point(29, 129);
             this.dollarsTextLabel.Name = "dollarsTextLabel";
             this.dollarsTextLabel.Size = new System.Drawing.Size(408, 18);
             this.dollarsTextLabel.TabIndex = 11;

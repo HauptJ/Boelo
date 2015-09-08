@@ -16,7 +16,7 @@ namespace IP1
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.SetCompatibleTextRenderingDefault(false);
 
             // Creating new tally.
             tally CheckTally = new tally();
@@ -60,9 +60,6 @@ namespace IP1
 
                 // debug for amount to string
                 // MessageBox.Show("Amount: "+InForm.getAmount()+"\nAmount Text: "+dollarAmountAsTxt);
-
-                // Display the output
-                Output.displayCheck(CheckTally.getNumChecks(), InForm.getName(), InForm.getAmount(), InForm.getMemo());
 
 
                 // Creates a message box asking if they want to enter another check.
