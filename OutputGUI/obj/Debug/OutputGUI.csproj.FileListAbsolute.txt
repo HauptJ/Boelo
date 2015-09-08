@@ -1,0 +1,9 @@
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\bin\Debug\OutputGUI.exe.config
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\bin\Debug\OutputGUI.exe
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\bin\Debug\OutputGUI.pdb
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\obj\Debug\OutputGUI.csprojResolveAssemblyReference.cache
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\obj\Debug\OutputGUI.OutputGUI.resources
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\obj\Debug\OutputGUI.Properties.Resources.resources
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\obj\Debug\OutputGUI.csproj.GenerateResource.Cache
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\obj\Debug\OutputGUI.exe
+c:\users\nicholas\documents\visual studio 2015\Projects\CS325IP1\OutputGUI\obj\Debug\OutputGUI.pdb
