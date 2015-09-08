@@ -271,7 +271,7 @@ namespace IP1
             }
             else
             {
-                numAsWord = "Zero";
+                numAsWord = "Zero ";
             }
             return numAsWord;
         }
