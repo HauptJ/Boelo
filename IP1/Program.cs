@@ -32,7 +32,10 @@ namespace IP1
                 // So beyond this point, assume a check has been entered successfully. 
 
                 // Debug for input form
-                MessageBox.Show("Name: " + InForm.getName() + "\nAmount: " + InForm.getAmount() + "\nMemo: " + InForm.getMemo() );
+                //MessageBox.Show("Name: " + InForm.getName() + "\nAmount: " + InForm.getAmount() + "\nMemo: " + InForm.getMemo() );
+
+                // Display the check
+                Output.displayCheck(CheckTally.getNumChecks(), InForm.getName(), InForm.getAmount(), InForm.getMemo());
 
                 // increments number of checks
                 CheckTally.incrementNumChecks();
