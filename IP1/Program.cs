@@ -35,8 +35,7 @@ namespace IP1
                 //MessageBox.Show("Name: " + InForm.getName() + "\nAmount: " + InForm.getAmount() + "\nMemo: " + InForm.getMemo() );
 
                 // Display the check
-                OutputGUI output = new OutputGUI();
-                output.displayCheck(CheckTally.getNumChecks(), InForm.getName(), InForm.getAmount(), InForm.getMemo());
+                
 
                 // increments number of checks
                 CheckTally.incrementNumChecks();
@@ -59,10 +58,14 @@ namespace IP1
                 // This method prints the dollar amount in the word format
                 string dollarAmountAsTxt = proc.PrintString();
 
+                // Creates and runs the output gui
+                OutputGUI output = new OutputGUI();
+                output.displayCheck(CheckTally.getNumChecks(), InForm.getName(), InForm.getAmount(), dollarAmountAsTxt, InForm.getMemo());
+
+
                 // debug for amount to string
                 // MessageBox.Show("Amount: "+InForm.getAmount()+"\nAmount Text: "+dollarAmountAsTxt);
-
-
+                
                 // Creates a message box asking if they want to enter another check.
                 DialogResult dialogResult = MessageBox.Show("Would you like to enter another check?", "Boelo - Intro Project 1 - More Checks", MessageBoxButtons.YesNo);
                 if(dialogResult == DialogResult.Yes)
