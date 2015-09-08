@@ -1,0 +1,9 @@
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\bin\Debug\IP1.exe.config
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\bin\Debug\IP1.exe
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\bin\Debug\IP1.pdb
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\obj\Debug\IP1.CheckInputForm.resources
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\obj\Debug\IP1.OutputGUI.resources
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\obj\Debug\IP1.Properties.Resources.resources
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\obj\Debug\IP1.csproj.GenerateResource.Cache
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\obj\Debug\IP1.exe
+C:\Users\JosephC\Documents\Visual Studio 2015\Projects\Boelo\IP1\obj\Debug\IP1.pdb
