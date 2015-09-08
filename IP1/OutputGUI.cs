@@ -14,47 +14,30 @@ namespace IP1 {
             InitializeComponent();
         }
 
-        /**
-        *   This displays the check in a window.
-        */
-        public void displayCheck(int checkID, String payee, double dollarAmount, String dollarText, String memo) {
-            
-            // Get the date for the check
-            String day = DateTime.Now.Day.ToString();
-            String month = DateTime.Now.Month.ToString();
-            String date = (month.Length == 1 ? "0" + month : month) + "/"
-                + (day.Length == 1 ? "0" + day : day) + "/"
-                + DateTime.Now.Year;
-
-
+        public void displayCheck(int checkID, String date, String payee, double dollarAmount, String dollarText, String memo, int totalChecks, double totalDollars) {
             checkNumTopLabel.Text = checkID.ToString();
             checkNumBottomLabel.Text = checkID.ToString();
             dateLabel.Text = date;
 
-            // Display the dollar amount correctly
-            dollarsLabel.Text = String.Format("{0:n}", dollarAmount);
-
-            // These loops make sure the underlined string reaches the desired length.
             int payeeLength = payeeLabel.Text.Length;
             payeeLabel.Text = payee;
             while (payeeLabel.Text.Length < payeeLength)
                 payeeLabel.Text += " ";
+
+            dollarsLabel.Text = dollarAmount.ToString();
 
             int dollarTextLength = dollarsTextLabel.Text.Length;
             dollarsTextLabel.Text = dollarText;
             while (dollarsTextLabel.Text.Length < dollarTextLength)
                 dollarsTextLabel.Text += " ";
 
-            // This adjusts the window size to fit the dollar text
-            if (dollarsTextLabel.Text.Length > dollarTextLength)
-                this.Width += (dollarsTextLabel.Text.Length - dollarTextLength) * 9;
-
             int memoLength = memoLabel.Text.Length;
             memoLabel.Text = memo;
             while (memoLabel.Text.Length < memoLength)
                 memoLabel.Text += " ";
-            
-            // Show the window
+
+            totalsLabel.Text = "Total checks: " + totalChecks.ToString() + " | Sum of all checks: " + totalDollars.ToString();
+            //Application.EnableVisualStyles();
             Application.Run(this);
         }
 

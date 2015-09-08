@@ -8,3 +8,13 @@ D:\Git\Boelo\IP1\bin\Debug\IP1.pdb
 D:\Git\Boelo\IP1\obj\Debug\IP1.CheckInputForm.resources
 D:\Git\Boelo\IP1\obj\Debug\IP1.exe
 D:\Git\Boelo\IP1\obj\Debug\IP1.pdb
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\bin\Debug\IP1.exe.config
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\obj\Debug\IP1.exe
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\obj\Debug\IP1.pdb
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\bin\Debug\IP1.exe
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\bin\Debug\IP1.pdb
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\obj\Debug\IP1.csprojResolveAssemblyReference.cache
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\obj\Debug\IP1.CheckInputForm.resources
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\obj\Debug\IP1.OutputGUI.resources
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\obj\Debug\IP1.Properties.Resources.resources
+C:\Users\Nicholas\Documents\Visual Studio 2015\Projects\CS325IP1-temp\Boelo\IP1\obj\Debug\IP1.csproj.GenerateResource.Cache

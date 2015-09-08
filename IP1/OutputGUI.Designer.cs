@@ -41,14 +41,15 @@
             this.label16 = new System.Windows.Forms.Label();
             this.checkNumBottomLabel = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.totalsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // checkNumTopLabel
             // 
+            this.checkNumTopLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.checkNumTopLabel.AutoSize = true;
             this.checkNumTopLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkNumTopLabel.Location = new System.Drawing.Point(480, 9);
-            this.checkNumTopLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.checkNumTopLabel.Name = "checkNumTopLabel";
             this.checkNumTopLabel.Size = new System.Drawing.Size(48, 18);
             this.checkNumTopLabel.TabIndex = 0;
@@ -56,10 +57,10 @@
             // 
             // dateLabel
             // 
+            this.dateLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.Location = new System.Drawing.Point(440, 33);
-            this.dateLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(88, 16);
             this.dateLabel.TabIndex = 1;
@@ -68,10 +69,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(392, 70);
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(16, 16);
             this.label3.TabIndex = 2;
@@ -80,10 +81,10 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(394, 33);
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 16);
             this.label4.TabIndex = 3;
@@ -91,11 +92,11 @@
             // 
             // dollarsLabel
             // 
+            this.dollarsLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dollarsLabel.AutoSize = true;
             this.dollarsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dollarsLabel.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dollarsLabel.Location = new System.Drawing.Point(414, 70);
-            this.dollarsLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dollarsLabel.Name = "dollarsLabel";
             this.dollarsLabel.Size = new System.Drawing.Size(106, 18);
             this.dollarsLabel.TabIndex = 4;
@@ -124,10 +125,10 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(443, 129);
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 16);
             this.label9.TabIndex = 8;
@@ -159,7 +160,7 @@
             this.dollarsTextLabel.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dollarsTextLabel.Location = new System.Drawing.Point(29, 129);
             this.dollarsTextLabel.Name = "dollarsTextLabel";
-            this.dollarsTextLabel.Size = new System.Drawing.Size(408, 18);
+            this.dollarsTextLabel.Size = new System.Drawing.Size(408, 17);
             this.dollarsTextLabel.TabIndex = 11;
             this.dollarsTextLabel.Text = "__________________________________________________";
             // 
@@ -197,7 +198,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(34, 241);
+            this.label15.Location = new System.Drawing.Point(28, 219);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(109, 22);
             this.label15.TabIndex = 15;
@@ -207,7 +208,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(161, 241);
+            this.label16.Location = new System.Drawing.Point(164, 219);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(142, 22);
             this.label16.TabIndex = 16;
@@ -217,7 +218,7 @@
             // 
             this.checkNumBottomLabel.AutoSize = true;
             this.checkNumBottomLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkNumBottomLabel.Location = new System.Drawing.Point(384, 241);
+            this.checkNumBottomLabel.Location = new System.Drawing.Point(386, 223);
             this.checkNumBottomLabel.Name = "checkNumBottomLabel";
             this.checkNumBottomLabel.Size = new System.Drawing.Size(48, 18);
             this.checkNumBottomLabel.TabIndex = 19;
@@ -233,11 +234,21 @@
             this.label20.TabIndex = 20;
             this.label20.Text = "Intro Project 1";
             // 
+            // totalsLabel
+            // 
+            this.totalsLabel.AutoSize = true;
+            this.totalsLabel.Location = new System.Drawing.Point(29, 250);
+            this.totalsLabel.Name = "totalsLabel";
+            this.totalsLabel.Size = new System.Drawing.Size(185, 13);
+            this.totalsLabel.TabIndex = 21;
+            this.totalsLabel.Text = "Total checks: 0 | Sum of all checks: 0";
+            // 
             // OutputGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(532, 272);
+            this.Controls.Add(this.totalsLabel);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.checkNumBottomLabel);
             this.Controls.Add(this.label16);
@@ -284,6 +295,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label checkNumBottomLabel;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label totalsLabel;
     }
 }
 
