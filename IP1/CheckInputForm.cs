@@ -138,7 +138,7 @@ namespace IP1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "InputForm";
-            this.Text = "Check - Input";
+            this.Text = "Boelo - Intro Project 1 - Input Check";
             ((System.ComponentModel.ISupportInitialize)(this.tAmount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
