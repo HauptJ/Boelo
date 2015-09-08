@@ -17,7 +17,20 @@ namespace IP1 {
         /**
         *   This displays the check in a window.
         */
-        public void displayCheck(int checkID, String date, String payee, double dollarAmount, String dollarText, String memo) {
+        public void displayCheck(int checkID, String payee, double dollarAmount, String memo) {
+            // Convert the decimal amount to a string
+            InputProcessor ip = new InputProcessor();
+            ip.Parse(dollarAmount);
+            String dollarText = ip.PrintString();
+
+            // Get the date for the check
+            String day = DateTime.Now.Day.ToString();
+            String month = DateTime.Now.Month.ToString();
+            String date = (month.Length == 1 ? "0" + month : month) + "/"
+                + (day.Length == 1 ? "0" + day : day) + "/"
+                + DateTime.Now.Year;
+
+
             checkNumTopLabel.Text = checkID.ToString();
             checkNumBottomLabel.Text = checkID.ToString();
             dateLabel.Text = date;
@@ -35,6 +48,10 @@ namespace IP1 {
             dollarsTextLabel.Text = dollarText;
             while (dollarsTextLabel.Text.Length < dollarTextLength)
                 dollarsTextLabel.Text += " ";
+
+            // This adjusts the window size to fit the dollar text
+            if (dollarsTextLabel.Text.Length > dollarTextLength)
+                this.Width += (dollarsTextLabel.Text.Length - dollarTextLength) * 9;
 
             int memoLength = memoLabel.Text.Length;
             memoLabel.Text = memo;

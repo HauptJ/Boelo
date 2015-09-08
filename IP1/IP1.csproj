@@ -56,7 +56,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="InputProcessor.cs" />
-    <Compile Include="Output.cs" />
     <Compile Include="OutputGUI.cs">
       <SubType>Form</SubType>
     </Compile>
