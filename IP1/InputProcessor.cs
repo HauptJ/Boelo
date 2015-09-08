@@ -269,6 +269,10 @@ namespace IP1
                     numAsWord += Ones(some);
                 }
             }
+            else
+            {
+                numAsWord = "Zero";
+            }
             return numAsWord;
         }
 
