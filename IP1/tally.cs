@@ -37,11 +37,20 @@ namespace IP1
 
         //saftely returns the number of checks issued so far
         //input: none
-        //output: numChecks (number of checks issued so far) as int
+        //output: numChecks (checkNumber) as int
 
         public int getNumChecks()
         {
             return numChecks;
+        }
+
+        //saftely returns the number of checks issued so far
+        //input: none
+        //output: number of checks wrote as int
+
+        public int getNumChecksWrote()
+        {
+            return checksWrote;
         }
 
         //saftely returns the current check sum
