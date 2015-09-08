@@ -204,7 +204,7 @@ namespace IP1
             string numAsWord = "";
             if (some != 0)
             {
-                if (some > 1000000000000)
+                if (some >= 1000000000000)
                 {
                     temp = some / 1000000000000;
                     numAsWord += Num_Word(temp);
@@ -213,7 +213,7 @@ namespace IP1
                     Num_Word(some);
                 }
 
-                if (some > 1000000000)
+                if (some >= 1000000000)
                 {
                     temp = some / 1000000000;
                     numAsWord += Num_Word(temp);
@@ -222,7 +222,7 @@ namespace IP1
                     Num_Word(some);
                 }
 
-                if (some > 1000000)
+                if (some >= 1000000)
                 {
                     temp = some / 1000000;
                     numAsWord += Num_Word(temp);
@@ -231,7 +231,7 @@ namespace IP1
                     Num_Word(some);
                 }
 
-                if (some > 1000)
+                if (some >= 1000)
                 {
                     temp = some / 1000;
                     numAsWord += Num_Word(temp);
@@ -240,7 +240,7 @@ namespace IP1
                     Num_Word(some);
                 }
 
-                if (some > 100)
+                if (some >= 100)
                 {
                     temp = some / 100;
                     numAsWord += Num_Word(temp);
@@ -249,7 +249,7 @@ namespace IP1
                     Num_Word(some);
                 }
 
-                if (some > 19)
+                if (some >= 20)
                 {
                     temp = some / 10;
                     numAsWord += Ten(temp);
@@ -257,14 +257,14 @@ namespace IP1
                     Num_Word(some);
                 }
 
-                if (some > 10)
+                if (some >= 11)
                 {
                     numAsWord += Teens(some);
                     some = 0;
                     Num_Word(some);
                 }
 
-                if (some > 0)
+                if (some >= 0)
                 {
                     numAsWord += Ones(some);
                 }
