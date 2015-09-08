@@ -30,17 +30,23 @@ namespace IP1 {
             checkNumBottomLabel.Text = checkID.ToString();
             dateLabel.Text = date;
 
+            // Display the dollar amount correctly
+            dollarsLabel.Text = String.Format("{0:n}", dollarAmount);
+
+            // These loops make sure the underlined string reaches the desired length.
             int payeeLength = payeeLabel.Text.Length;
             payeeLabel.Text = payee;
             while (payeeLabel.Text.Length < payeeLength)
                 payeeLabel.Text += " ";
 
-            dollarsLabel.Text = dollarAmount.ToString();
-
             int dollarTextLength = dollarsTextLabel.Text.Length;
             dollarsTextLabel.Text = dollarText;
             while (dollarsTextLabel.Text.Length < dollarTextLength)
                 dollarsTextLabel.Text += " ";
+
+            // This adjusts the window size to fit the dollar text
+            if (dollarsTextLabel.Text.Length > dollarTextLength)
+                this.Width += (dollarsTextLabel.Text.Length - dollarTextLength) * 9;
 
             int memoLength = memoLabel.Text.Length;
             memoLabel.Text = memo;
