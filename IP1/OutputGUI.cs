@@ -14,7 +14,18 @@ namespace IP1 {
             InitializeComponent();
         }
 
-        public void displayCheck(int checkID, String date, String payee, double dollarAmount, String dollarText, String memo, int totalChecks, double totalDollars) {
+        /**
+        *   This displays the check in a window.
+        */
+        public void displayCheck(int checkID, String payee, double dollarAmount, String dollarText, String memo, int totalChecks, double dollarSum) {
+
+            // Get the date for the check
+            String day = DateTime.Now.Day.ToString();
+            String month = DateTime.Now.Month.ToString();
+            String date = (month.Length == 1 ? "0" + month : month) + "/"
+                + (day.Length == 1 ? "0" + day : day) + "/"
+                + DateTime.Now.Year;
+
             checkNumTopLabel.Text = checkID.ToString();
             checkNumBottomLabel.Text = checkID.ToString();
             dateLabel.Text = date;
@@ -36,8 +47,8 @@ namespace IP1 {
             while (memoLabel.Text.Length < memoLength)
                 memoLabel.Text += " ";
 
-            totalsLabel.Text = "Total checks: " + totalChecks.ToString() + " | Sum of all checks: " + totalDollars.ToString();
-            //Application.EnableVisualStyles();
+            totalsLabel.Text = "Total checks: " + totalChecks.ToString() + " | Sum of all checks: " + dollarSum.ToString();
+            // Show the window
             Application.Run(this);
         }
 

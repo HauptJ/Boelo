@@ -60,7 +60,8 @@ namespace IP1
 
                 // Creates and runs the output gui
                 OutputGUI output = new OutputGUI();
-                output.displayCheck(CheckTally.getNumChecks(), InForm.getName(), InForm.getAmount(), dollarAmountAsTxt, InForm.getMemo(), CheckTally.getNumChecks(), CheckTally.getCheckSum());
+
+                output.displayCheck(CheckTally.getNumChecks(), InForm.getName(), InForm.getAmount(), dollarAmountAsTxt, InForm.getMemo(), CheckTally.getNumChecksWrote(), CheckTally.getCheckSum());
 
 
                 // debug for amount to string
