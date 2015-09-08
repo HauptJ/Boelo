@@ -10,16 +10,21 @@ namespace IP1
     {
         // values to be tracked by the tally component
         private int numChecks = 3002; //set check counter to initial value of 3002
+
+        private int checksWrote = 0;
+
         private double checkSum = 0;
        
         public object InForm { get; internal set; }
 
-        //increments total number of checks when called
+        //increments total number of checks and check number when called
         //input: none
         //optput: none
         public void incrementNumChecks()
         {
             numChecks++;
+
+            checksWrote++;
         }
 
         //adds up sum of checks
