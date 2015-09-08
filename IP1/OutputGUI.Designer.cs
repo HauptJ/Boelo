@@ -1,5 +1,5 @@
 ﻿namespace IP1 {
-    partial class OutputGUI {
+    partial class IP01_OutputGUI_Boelo {
         /// <summary>
         /// Required designer variable.
         /// </summary>

@@ -19,7 +19,7 @@ namespace IP1
             //Application.SetCompatibleTextRenderingDefault(false);
 
             // Creating new tally.
-            tally CheckTally = new tally();
+            IP01_Tally_Boelo CheckTally = new IP01_Tally_Boelo();
 
             // Create a while flag for entering more than one check.
             bool Rep;
@@ -50,7 +50,7 @@ namespace IP1
                 // InForm.getMemo()
 
                 // Creates the input processor
-                InputProcessor proc = new InputProcessor();
+                IP01_InputProcessor_Boelo proc = new IP01_InputProcessor_Boelo();
 
                 // This method converts the getAmount into the string so the decimal and the whole number can be evaluated
                 proc.Parse(InForm.getAmount());
@@ -59,7 +59,7 @@ namespace IP1
                 string dollarAmountAsTxt = proc.PrintString();
 
                 // Creates and runs the output gui
-                OutputGUI output = new OutputGUI();
+                IP01_OutputGUI_Boelo output = new IP01_OutputGUI_Boelo();
 
                 output.displayCheck(CheckTally.getNumChecks(), InForm.getName(), InForm.getAmount(), dollarAmountAsTxt, InForm.getMemo(), CheckTally.getNumChecksWrote(), CheckTally.getCheckSum());
 

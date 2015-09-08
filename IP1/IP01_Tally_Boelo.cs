@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IP1
 {
-    class tally
+    class IP01_Tally_Boelo
     {
         // values to be tracked by the tally component
         private int numChecks = 3002; //set check counter to initial value of 3002

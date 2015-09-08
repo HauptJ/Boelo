@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IP1 {
-    public partial class OutputGUI : Form {
-        public OutputGUI() {
+    public partial class IP01_OutputGUI_Boelo : Form {
+        public IP01_OutputGUI_Boelo() {
             InitializeComponent();
         }
 
